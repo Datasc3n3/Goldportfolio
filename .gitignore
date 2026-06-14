@@ -1,0 +1,49 @@
+# Virtuele omgeving
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Persoonlijke financiele data
+PORTFOLIO.csv
+data/raw/portfolio_raw.csv
+data/processed/portfolio_cleaned.csv
+data/processed/bars_with_spot.csv
+
+# School documenten
+eindproef_combined.md
+
+# Oud dashboard (vervangen door dashboard/app.py)
+dashboard_goud.html
+
+# Update script (alleen lokaal)
+update_presentatie.py
+
+# Presentatie (alleen lokaal)
+presentatie_eindproef.html
+
+# Notebook 6 (presentatievoorbereiding, alleen lokaal)
+notebooks/06_dashboard_walkthrough.ipynb
+
+# Opgeslagen modellen
+data/models/*.pkl
+data/models/*.joblib
+
+# Systeembestanden
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Omgevingsvariabelen
+.env

@@ -1,0 +1,321 @@
+/* Gold Portfolio Dashboard — Light Clean Theme */
+/* Compliant with Analytics Academy Dashboard Design Checklist */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F7F8FA !important;
+    color: #1A1A2E !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.dashboard-header {
+    background: #FFFFFF;
+    border-bottom: 3px solid #B8860B;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-logo {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.header-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1A1A2E;
+    letter-spacing: 1px;
+}
+
+.header-subtitle {
+    font-size: 0.78rem;
+    color: #6B7280;
+    margin-top: 2px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-spot {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #B8860B;
+}
+
+.header-time {
+    font-size: 0.72rem;
+    color: #9CA3AF;
+    margin-top: 2px;
+}
+
+/* ── Tabs ────────────────────────────────────────────────── */
+.nav-tabs {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB !important;
+    padding: 0 32px;
+}
+
+.nav-tabs .nav-link {
+    color: #6B7280 !important;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
+    padding: 12px 20px !important;
+    background: none !important;
+    border-radius: 0 !important;
+    transition: all 0.15s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #1A1A2E !important;
+    border-bottom-color: #D4A843 !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #B8860B !important;
+    border-bottom-color: #B8860B !important;
+    font-weight: 600;
+}
+
+/* ── Page container ──────────────────────────────────────── */
+.page-container {
+    padding: 24px 32px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ── Section header ──────────────────────────────────────── */
+.section-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #9CA3AF;
+    margin-bottom: 4px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1A1A2E;
+    margin-bottom: 16px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #E5E7EB;
+    margin: 20px 0;
+}
+
+/* ── KPI Cards ───────────────────────────────────────────── */
+.kpi-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-top: 3px solid #B8860B;
+    border-radius: 8px;
+    padding: 18px 20px;
+    height: 100%;
+}
+
+.kpi-card.blue {
+    border-top-color: #2C5F8A;
+}
+
+.kpi-card.green {
+    border-top-color: #1A7A4A;
+}
+
+.kpi-card.neutral {
+    border-top-color: #6B7280;
+}
+
+.kpi-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9CA3AF;
+    margin-bottom: 6px;
+}
+
+.kpi-value {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #1A1A2E;
+    line-height: 1.2;
+}
+
+.kpi-sub {
+    font-size: 0.78rem;
+    color: #6B7280;
+    margin-top: 4px;
+}
+
+.kpi-trend-pos {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #1A7A4A;
+    margin-top: 4px;
+}
+
+.kpi-trend-neg {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #C0392B;
+    margin-top: 4px;
+}
+
+/* ── Chart Cards ─────────────────────────────────────────── */
+.chart-card {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.chart-card-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1A1A2E;
+    margin-bottom: 4px;
+}
+
+.chart-card-subtitle {
+    font-size: 0.72rem;
+    color: #9CA3AF;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+/* ── Source annotation ───────────────────────────────────── */
+.source-note {
+    font-size: 0.68rem;
+    color: #9CA3AF;
+    margin-top: 6px;
+    font-style: italic;
+}
+
+/* ── Scenario badge ──────────────────────────────────────── */
+.scenario-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.badge-bullish {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.badge-neutraal {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.badge-bearish {
+    background: #FEE2E2;
+    color: #991B1B;
+}
+
+/* ── Progress bar ────────────────────────────────────────── */
+.progress-wrap {
+    background: #F3F4F6;
+    border-radius: 99px;
+    height: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #B8860B, #D4A843);
+    transition: width 0.5s ease;
+}
+
+/* ── Detail rows ─────────────────────────────────────────── */
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid #F3F4F6;
+    font-size: 0.85rem;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: #6B7280;
+}
+
+.detail-value {
+    font-weight: 600;
+    color: #1A1A2E;
+}
+
+/* ── Scenario result rows ────────────────────────────────── */
+.scenario-result-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    margin-bottom: 8px;
+    background: #FAFAFA;
+}
+
+.scenario-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 14px 16px;
+    }
+
+    .page-container {
+        padding: 16px;
+    }
+
+    .kpi-value {
+        font-size: 1.2rem;
+    }
+
+    .header-title {
+        font-size: 1rem;
+    }
+}
