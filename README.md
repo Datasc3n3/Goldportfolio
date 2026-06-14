@@ -33,8 +33,7 @@ Goldportfolio/
 │   ├── 02_data_profiling_cleaning.ipynb  # Profiling & cleaning
 │   ├── 03_eda.ipynb               # Exploratory Data Analysis
 │   ├── 04_price_prediction.ipynb  # Modellen (LR + ARIMA)
-│   ├── 05_scenario_analysis.ipynb # 3 scenario projecties
-│   └── 06_dashboard_walkthrough.ipynb  # Dashboard demo
+│   └── 05_scenario_analysis.ipynb # 3 scenario projecties 
 │
 ├── src/
 │   ├── data_loader.py             # Data ophalen & cachen
@@ -64,7 +63,7 @@ pip install -r requirements.txt
 jupyter notebook notebooks/
 ```
 
-Voer de notebooks uit in volgorde (01 t/m 06).
+Voer de notebooks uit in volgorde (01 t/m 05).
 
 > **Let op:** Sommige notebooks verwachten een `PORTFOLIO.csv` met persoonlijke aankoopgegevens.
 > Voor testdoeleinden kun je `data/sample/PORTFOLIO_SAMPLE.csv` gebruiken.
